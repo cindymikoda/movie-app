@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import Search from "./components/Search";
 import Spinner from "./components/Spinner";
 import MovieCard from "./components/MovieCard";
+import Footer from "./components/Footer";
 import { useDebounce } from "react-use";
 import { getTrendingMovies, updateSearchCount } from "./appwrite";
 
@@ -171,6 +172,8 @@ const App = () => {
             </ul>
           )}
         </section>
+        {/* FOOTER SECTION - Added at the end of content */}
+        <Footer />
       </div>
     </main>
   );

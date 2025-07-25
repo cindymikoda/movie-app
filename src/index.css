@@ -217,6 +217,61 @@
       /* Gray, medium weight, base size */
     }
   }
+  /* Main footer container */
+  .footer {
+    @apply mt-20 py-8 border-t border-light-100/10 bg-dark-100/20;
+    /* 
+     - mt-20: Large top margin to separate from content
+     - py-8: Vertical padding top and bottom
+     - border-t: Top border line
+     - border-light-100/10: Very subtle light border (10% opacity)
+     - bg-dark-100/20: Subtle dark background (20% opacity)
+  */
+  }
+
+  /* Footer content wrapper */
+  .footer-content {
+    @apply max-w-7xl mx-auto px-5;
+    /* 
+     - max-w-7xl: Main wrapper max width
+     - mx-auto: Center horizontally
+     - px-5: Horizontal padding 
+  */
+  }
+
+  /* Footer text styling */
+  .footer-text {
+    @apply text-center text-sm text-light-200 leading-relaxed;
+    /* 
+     - text-center: Center align the text
+     - text-sm: Small text size
+     - text-light-200: Light purple color
+     - leading-relaxed: Comfortable line height
+  */
+  }
+
+  /* Footer links styling */
+  .footer-link {
+    @apply text-light-100 hover:text-white transition-colors duration-200 underline decoration-light-100/30 hover:decoration-white underline-offset-2;
+    /* 
+     - text-light-100: Light color for links
+     - hover:text-white: White on hover
+     - transition-colors duration-200: Smooth color transition
+     - underline: Always underlined
+     - decoration-light-100/30: Subtle underline color
+     - hover:decoration-white: White underline on hover
+     - underline-offset-2: Small gap between text and underline
+  */
+  }
+
+  /* Primary link special styling */
+  .footer-link-primary {
+    @apply text-gradient hover:from-white hover:to-white;
+    /* 
+     - text-gradient: Use your existing gradient utility
+     - hover:from-white hover:to-white: White gradient on hover
+  */
+  }
 }
 
 /* ====== UTILITY LAYER - Custom utilities that extend Tailwind's built-in utilities. */
